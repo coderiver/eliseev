@@ -1,0 +1,111 @@
+=wrap
+	width: 950px
+	margin-left: auto
+	margin-right: auto
+.bar
+	height: 36px
+	line-height: 36px
+	background: #033a5d
+	color: #cfcfcf
+	.bar-i
+		+wrap
+	.bar__phone
+		display: inline-block
+		margin-left: 355px
+		font-size: 25px
+	.login
+		float: right
+		.login__link
+			color: #435b6a
+			font-size: 16px
+			a
+				color: #cfcfcf
+				text-decoration: none
+				border-bottom: 1px dashed #cfcfcf
+				&:hover
+					text-decoration: none
+					border-color: transparent
+
+.header
+	position: relative
+	+background-image(linear-gradient(top, #fff 0, #cce6fc 80px))
+	&:after
+		position: absolute
+		bottom: -10px
+		left: 0
+		width: 100%
+		height: 10px
+		background: url('../img/header-bg.png') repeat-x
+		content: ""
+	.header-i
+		+clr
+		+wrap
+		padding-bottom: 10px
+	.logo
+		float: left
+		margin-top: 18px
+		margin-right: 70px
+		+s(logo-sm)
+		a
+			display: block
+			height: 100%
+			+ht
+	.nav
+		float: left
+		width: 380px
+		margin-top: 65px
+		& > ul
+			+clr
+			li
+				float: left
+				margin-left: 60px
+				font-size: 18px
+				color: #0c3f5f
+				line-height: 1
+				&:first-child
+					margin-left: 0
+				span
+					position: relative
+					display: inline-block
+					padding-right: 15px
+					line-height: 1
+					b
+						font-style: normal
+						font-weight: normal
+						border-bottom: 1px dashed #0c3f5f
+					&:hover
+						cursor: pointer
+						b
+							border-color: transparent
+					&:after
+						position: absolute
+						right: 0
+						top: 50%
+						margin-top: -2px
+						content: ""
+						width: 0px
+						height: 0px
+						border-style: solid
+						border-width: 4px 4px 0 4px
+						border-color: #0c3f5f transparent transparent transparent
+				a
+					display: inline-block
+					line-height: 1
+					color: #0c3f5f
+					text-decoration: none
+					border-bottom: 1px solid #0c3f5f
+					&:hover
+						text-decoration: none
+						border-color: transparent
+
+
+
+
+
+
+
+
+
+
+
+

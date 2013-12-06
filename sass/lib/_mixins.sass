@@ -1,0 +1,130 @@
+=font($alias, $name)
+	@font-face
+		font-family: $alias
+		src: url('../fonts/'+$name+'.eot')
+		src: local('☺'), url('../fonts/'+$name+'.woff') format('woff'), url('../fonts/'+$name+'.ttf') format('truetype')
+		font-weight: normal
+		font-style: normal
+
+=fs($sizeValue: 16)
+	font-size: $sizeValue + px
+	font-size: ($sizeValue / 10) + rem
+
+=ht
+	font: 0/0 a
+	text-shadow: none
+	color: transparent
+
+=ie-inline
+	*display: inline
+	*zoom: 1
+
+=text-overflow
+	overflow: hidden
+	-ms-text-overflow: ellipsis
+	text-overflow: ellipsis
+	white-space: nowrap
+
+=clr
+	&:before, &:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+
+=placeholder($color)
+	&:-moz-placeholder,
+	&::-moz-placeholder
+		color: $color
+		opacity: 1
+	&::-webkit-input-placeholder
+		color: $color
+
+=rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
+	-moz-transform: 	rotate($deg + deg)
+	-o-transform: 		rotate($deg + deg)
+	-webkit-transform: 	rotate($deg + deg)
+	-ms-transform: 		rotate($deg + deg)
+	transform: 			rotate($deg + deg)
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand')
+	*zoom: 1
+
+=transition($what)
+	-moz-transition: 		$what
+	-o-transition: 			$what
+	-webkit-transition: 	$what
+	-ms-transition: 		$what
+	transition: 			$what
+
+=unselect()
+	-webkit-touch-callout: 	none
+	-webkit-user-select: 	none
+	-khtml-user-select: 	none
+	-moz-user-select: 		none
+	-ms-user-select: 		none
+	user-select: 			none
+
+=prevent-text()
+	-ms-word-break: 	break-all
+	word-break: 		break-all
+	word-break: 		break-word
+	-webkit-hyphens: 	auto
+	-moz-hyphens: 		auto
+	hyphens: 			auto
+
+=font-smoothing($val: antialiased)
+	-webkit-font-smoothing: 	$val
+	-moz-font-smoothing: 		$val
+	-ms-font-smoothing: 		$val
+	-o-font-smoothing: 			$val
+	-moz-osx-font-smoothing: 	grayscale
+
+=selection($color, $val)
+	::selection
+		background: ($val)
+		color: ($color)
+	::-moz-selection
+		background: ($val)
+		color: ($color)
+
+=cover
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+
+=box-sizing
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: 	border-box
+	box-sizing: 		border-box
+
+=radius($val)
+	-webkit-border-radius: 	$val
+	border-radius: 			$val
+
+=g($color1, $color2)
+	+background-image(linear-gradient($color1, $color2))
+
+=gh($color1, $color2)
+	+background-image(linear-gradient(left, $color1, $color2))
+
+
+// icons sprite
+$icons: sprite-map("icons/*.png", $spacing: 10px)
+=image-size($path)
+	width: 	image-width($path)
+	height: image-height($path)
+
+=s($sprite, $map: $icons)
+	background: sprite($map, $sprite) no-repeat
+	//background-image: inline-image('icons/'+$sprite+'.png','image/png'); to switches sprites to base64, elegant
+	+image-size(sprite-file($map, $sprite))
+
+// svg
+$svg: "svg/"
+=svg($name, $width, $height)
+	width: $width + px
+	height: $height + px
+	background-image: inline-image($svg + $name + ".svg")
+	-webkit-background-size: 100% 100%
+	background-size: 100% 100%
+
