@@ -98,9 +98,25 @@
 						text-decoration: none
 						border-color: transparent
 
+.footer
+	min-height: 200px 
+	position: relative
+	background: url(../img/icons/footer-bg.png) 0px 0px repeat
+	&:after, &:before
+		content: ""
+		width: 100%
 
-
-
+		position: absolute
+		left: 0
+		right: 0
+	&:after
+		height: 23px
+		top: -23px
+		background: url(../img/icons/footer-wave.png) 0px 0px repeat
+	&:before 
+		height: 21px  
+		bottom: -21px 
+		background: url(../img/icons/footer-wave_b2.png) 0px 0px repeat
 
 
 
