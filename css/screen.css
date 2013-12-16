@@ -155,7 +155,7 @@ body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; fo
 .menu .menu__title [class^="icon-"], .menu .menu__title [class*=" icon-"] { position: absolute; }
 .menu .menu__title .icon-cat { top: 9px; left: -10px; }
 .menu .menu__title .icon-people { left: -26px; top: 7px; }
-.menu .menu__title .h3 { font-size: 30px; display: inline-block; padding-left: 15px; margin-bottom: 35px; font-family: "Calibri Light", sans-serif; font-weight: normal; }
+.menu .menu__title .h3 { font-size: 30px; display: inline-block; padding-left: 15px; margin-bottom: 30px; font-family: "Calibri Light", sans-serif; font-weight: normal; }
 .menu .menu__title a { color: #fefefe; font-size: 30px; text-decoration: none; font-family: "Calibri Light", sans-serif; font-weight: normal; }
 .menu ul { width: 50%; float: left; }
 .menu ul:before, .menu ul:after { content: ""; display: table; }
