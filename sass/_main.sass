@@ -98,9 +98,100 @@
 						text-decoration: none
 						border-color: transparent
 
+.footer
+	padding: 35px 0
+	margin-top: 150px //del this style
+	position: relative
+	background: url(../img/icons/footer-bg.png) 0px 0px repeat
+	+box-sizing
+	&:after, &:before
+		content: ""
+		width: 100%
+		position: absolute
+		left: 0
+		right: 0
+	&:after
+		height: 23px
+		top: -23px
+		background: url(../img/icons/footer-wave.png) 0px 0px repeat
+	&:before
+		height: 22px
+		bottom: -22px
+		background: url(../img/icons/footer-wave_b2.png) 0px 0px repeat
+		+opacity(0.95)
+	.footer__in
+		+wrap
+		+clr
+		.menu, .menu_mod
+			float: left
 
+.footer__copyright
+	margin-top: 50px
+	margin-bottom: 30px
+	padding-bottom: 45px
+	line-height: 1
+	border-bottom: 1px solid #cacaca 
+	font-size: 16px
+	color: #000
+	+cl
+	+clr
+	.footer__copyright-in
+		+wrap
+	.footer__copyrigh-site
+		float: left
+	.footer__copyrigh-dev
+		float: right
+		a
+			color: #000
+			text-decoration: underline
+			&:hover
+				text-decoration: none
 
+.menu
+	width: 600px
+	+clr
+	.menu__title
+		position: relative
+		color: #fefefe
+		font-size: 30px
+		@include text-shadow(0 -2px 2px rgba(0,0,0,.75))
+		+cl
+		[class^="icon-"], [class*=" icon-"]
+			position: absolute
+			top: 0
+			left: -50px
+		.h3
+			display: inline-block
+			padding-left: 15px
+			margin-bottom: 35px
+		a
+			color: #fefefe
+			font-size: 30px
+			text-decoration: none
+			+cl
+	ul
+		width: 50%
+		overflow: hidden
+		float: left
+		+clr
+	li
+		width: 240px
+		float: left
+		line-height: 1
+		padding-left: 10px
+		margin-bottom: 20px
+	a
+		line-height: 1
+		font-size: 16px
+		color: #FFF
+		text-decoration: underline
+		+cl
+		&:hover
+			text-decoration: none
 
+.menu_mod
+	width: 300px
+	margin-left: 40px
 
 
 
