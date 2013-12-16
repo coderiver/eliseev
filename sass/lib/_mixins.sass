@@ -97,6 +97,11 @@
 	-moz-box-sizing: 	border-box
 	box-sizing: 		border-box
 
+=box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: 	border-box
+	box-sizing: 		border-box
+
 =radius($val)
 	-webkit-border-radius: 	$val
 	border-radius: 			$val
@@ -127,4 +132,19 @@ $svg: "svg/"
 	background-image: inline-image($svg + $name + ".svg")
 	-webkit-background-size: 100% 100%
 	background-size: 100% 100%
+
+
+@mixin position($width, $height)
+	@if $width
+		left: 50% 
+		width: $width + px
+		margin-left: -($width / 2) + px
+	@if $height
+		top: 50%
+		height: $height + px
+		margin-top: -($height / 2) + px
+
+@mixin br($val)
+	-webkit-border-radius: $val + px
+	border-radius: $val + px
 
