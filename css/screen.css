@@ -94,9 +94,9 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 [class^="icon-"], [class*=" icon-"] { display: inline-block; vertical-align: middle; }
 
-.icon-cat { background: url('../img/icons-sd72a9b7561.png') 0 -508px no-repeat; width: 36px; height: 56px; }
+.icon-cat { background: url('../img/icons-s308e5f9048.png') 0 -619px no-repeat; width: 36px; height: 56px; }
 
-.icon-people { background: url('../img/icons-sd72a9b7561.png') 0 -414px no-repeat; width: 61px; height: 51px; }
+.icon-people { background: url('../img/icons-s308e5f9048.png') 0 -453px no-repeat; width: 61px; height: 51px; }
 
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -115,7 +115,7 @@ body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; fo
 .header .header-i { width: 950px; margin-left: auto; margin-right: auto; padding-bottom: 10px; }
 .header .header-i:before, .header .header-i:after { content: ""; display: table; }
 .header .header-i:after { clear: both; }
-.header .logo { float: left; margin-top: 18px; margin-right: 70px; background: url('../img/icons-sd72a9b7561.png') 0 -283px no-repeat; width: 302px; height: 121px; }
+.header .logo { float: left; margin-top: 18px; margin-right: 70px; background: url('../img/icons-s308e5f9048.png') 0 -283px no-repeat; width: 302px; height: 121px; }
 .header .logo a { display: block; height: 100%; font: 0/0 a; text-shadow: none; color: transparent; }
 .header .nav { float: left; width: 380px; margin-top: 65px; }
 .header .nav > ul:before, .header .nav > ul:after { content: ""; display: table; }
@@ -169,3 +169,63 @@ body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; fo
 .l:after { clear: both; }
 .l .l-sidebar { float: left; width: 170px; margin-right: -170px; }
 .l .l-main { float: left; width: 570px; margin-left: 250px; }
+
+.nav__basket { width: 570px !important; }
+.nav__basket .basket { position: relative; padding-left: 45px; }
+.nav__basket .basket:before { position: absolute; top: -10px; left: 0px; content: ""; background: url('../img/icons-s308e5f9048.png') 0 -514px no-repeat; width: 35px; height: 45px; }
+.nav__basket .basket:after { content: none !important; }
+
+.wrapper { width: 950px; min-height: 640px; margin: 0 auto; font-family: Calibri, sans-serif; font-weight: normal; line-height: 1.4; font-size: 14px; }
+
+.l-col1 { float: left; margin-right: 40px; width: 210px; }
+
+.l-col2 { width: 700px; float: right; }
+
+.breadcrumbs { margin: 28px 0 25px; font-weight: normal; font-size: 16px; color: #4b5053; }
+.breadcrumbs a { position: relative; margin-right: 20px; color: #1d5b82; font-weight: 100; }
+.breadcrumbs a:hover { text-decoration: none; }
+.breadcrumbs a:before { position: absolute; top: 50%; right: -17px; margin-top: -3px; content: ""; background: url('../img/icons-s308e5f9048.png') 0 -569px no-repeat; width: 10px; height: 7px; }
+
+.information { position: relative; margin: 12px 0 12px; padding: 10px 0 10px 29px; height: 95px; font-size: 20px; background: url("../img/bac1.png") repeat; }
+.information:before { position: absolute; left: 0; bottom: 0; height: 5px; width: 210px; background: url("../img/bacbattom.png"); content: ""; }
+.information:after { position: absolute; left: 0; top: 0; height: 5px; width: 210px; background: url("../img/bacbattom.png"); transform: rotate(180deg); content: ""; }
+
+.links-i, .information__links-i { color: #4b5053; font-weight: 100; }
+.links-i:hover, .information__links-i:hover { text-decoration: none; }
+
+.order, .information__order-number { position: relative; margin-top: 10px; color: #3db1fa; font-weight: normal; cursor: pointer; display: inline-block; }
+.order:before, .information__order-number:before { position: absolute; top: 50%; left: -20px; margin-top: -4px; width: 6px; height: 6px; content: ""; -webkit-box-shadow: 0 2px 1px 0 #cff6fa; -moz-box-shadow: 0 2px 1px 0 #cff6fa; box-shadow: 0 2px 1px 0 #cff6fa; -webkit-border-radius: 50%; border-radius: 50%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5%, #7aacc9), color-stop(95%, #41b3fa)); background-image: -webkit-linear-gradient(#7aacc9 5%, #41b3fa 95%); background-image: -moz-linear-gradient(#7aacc9 5%, #41b3fa 95%); background-image: -o-linear-gradient(#7aacc9 5%, #41b3fa 95%); background-image: linear-gradient(#7aacc9 5%, #41b3fa 95%); }
+
+.download-excel { position: relative; margin-left: 60px; display: inline-block; font-size: 12px; color: #4b5053; }
+.download-excel:hover { text-decoration: none; }
+.download-excel:before { position: absolute; top: 0; left: -33px; content: ""; background: url('../img/icons-s308e5f9048.png') 0 -414px no-repeat; width: 25px; height: 29px; }
+
+.title-top { margin-bottom: 20px; }
+
+.tops { padding-right: 10px; color: #4b5053; font-size: 18px; font-weight: 100; display: inline-block; }
+
+.title-top__name { margin-right: 302px; }
+
+.title-top__scrip { padding-right: 0; }
+
+.goods, .price__goods { position: relative; margin-bottom: 1px; padding: 15px 0; min-height: 120px; }
+.goods:before, .price__goods:before { position: absolute; top: 0; left: 0; height: 2px; width: 100%; content: ""; background: url("../img/bor1.png"); }
+.goods.price__goods_bott, .price__goods.price__goods_bott { position: relative; }
+.goods.price__goods_bott:after, .price__goods.price__goods_bott:after { position: absolute; bottom: 0; left: 0; height: 2px; width: 100%; content: ""; background: url("../img/bor1.png"); }
+
+.image-goods { float: left; margin: 15px 15px 15px 0; border-top: 1px solid #b9e1fb; border-bottom: 1px solid #bababa; }
+
+.description { float: left; margin-top: 12px; width: 190px; }
+
+.name-product { color: #1d5b82; font-size: 18px; line-height: 1; }
+.name-product:hover { text-decoration: none; }
+
+.description__quality { font-size: 15px; font-weight: 100; line-height: 1.6; color: black; }
+
+.description__quality_range { display: inline-block; width: 60px; }
+
+.amount { float: right; margin-top: 34px; }
+
+.amount__numeric { width: 100px; text-align: center; font-size: 15px; font-weight: 100; display: inline-block; }
+
+.amount__numeric_rig { text-align: right; font-size: 24px; font-weight: normal; }
