@@ -166,6 +166,10 @@ $ch-size: 18px
 		color: $bl
 		font-size: 24px 
 		+c
+	.form__title-error
+		font-size: 16px
+		color: #e00000
+		+cl
 .form__in
 	width: 380px
 
@@ -203,6 +207,13 @@ $ch-size: 18px
 	&:focus
 		border: 1px solid darken($f-border,15%)
 		@include box-shadow(inset 0 1px 2px darken($f-border,5%))
+
+.input_error
+	background: url("../img/icons/enter_bg-error2.png") 0 0 repeat
+	@include box-shadow(inset 0 1px 0px #a50c0c)
+	&:hover, &:focus
+		@include box-shadow(inset 0 1px 0px #a50c0c)
+	
 
 ///////////////////////////////// * checkbox * ////////////////////////////////
 .checkbox
