@@ -104,6 +104,7 @@
 	position: relative
 	background: url(../img/icons/footer-bg.png) 0px 0px repeat
 	+box-sizing
+	+c
 	&:after, &:before
 		content: ""
 		width: 100%
@@ -111,13 +112,13 @@
 		left: 0
 		right: 0
 	&:after
-		height: 23px
-		top: -23px
+		height: 12px
+		top: -12px
 		background: url(../img/icons/footer-wave.png) 0px 0px repeat
 	&:before
-		height: 22px
-		bottom: -22px
-		background: url(../img/icons/footer-wave_b2.png) 0px 0px repeat
+		height: 11px
+		bottom: -11px
+		background: url(../img/icons/footer-wave_b.png) 0px 0px repeat
 		+opacity(0.95)
 	.footer__in
 		+wrap
@@ -153,17 +154,22 @@
 	.menu__title
 		position: relative
 		color: #fefefe
-		font-size: 30px
 		@include text-shadow(0 -2px 2px rgba(0,0,0,.75))
 		+cl
 		[class^="icon-"], [class*=" icon-"]
 			position: absolute
-			top: 0
-			left: -50px
+		.icon-cat
+			top: 9px
+			left: -10px
+		.icon-people
+			left: -26px
+			top: 7px
 		.h3
+			font-size: 30px
 			display: inline-block
 			padding-left: 15px
-			margin-bottom: 35px
+			margin-bottom: 30px
+			+cl
 		a
 			color: #fefefe
 			font-size: 30px
@@ -171,7 +177,6 @@
 			+cl
 	ul
 		width: 50%
-		overflow: hidden
 		float: left
 		+clr
 	li
@@ -192,6 +197,10 @@
 .menu_mod
 	width: 300px
 	margin-left: 40px
+	ul
+		width: 150px
+	li
+		width: 150px
 
 
 
