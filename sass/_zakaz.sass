@@ -15,14 +15,15 @@
 	width: 950px
 	min-height: 640px
 	margin: 0 auto
+	margin-bottom: 10px 
 	font:
 		family: Calibri, sans-serif
 		weight: normal
 	line-height: 1.4
 	font-size: 14px
+	+clr
 .l-col1
 	float: left
-	margin-right: 40px
 	width: 210px
 .l-col2
 	width: 700px
@@ -46,11 +47,13 @@
 			margin-top: -3px
 			content: ""
 			+s(breadpref)
+	.breadcrumbs__span
+		color: #4B5053 
+		font-size: 16px
 .information
 	position: relative
 	margin: 12px 0 12px
 	padding: 10px 0 10px 29px 
-	height: 95px
 	font-size: 20px
 	background: url("../img/bac1.png") repeat
 	&:before
@@ -69,6 +72,58 @@
 		width: 210px
 		background: url("../img/bacbattom.png")
 		transform: rotate(180deg)
+		content: ""
+.authorization
+	position: relative
+	margin: 9px 0 20px 20px
+.authorization__col
+	font-size: 16px
+	font-weight: 100 
+	color: #F00 
+.authorization__col_edit
+	border-bottom: 1px dashed #F00 
+	cursor: pointer  
+	&:hover
+		border: none 
+	&:before
+		position: absolute
+		top: 6px
+		left: -20px
+		+s(av1)
+		content: ""
+.authorization__col_change-passw
+	position: relative
+	margin-top: 10px 
+	text-decoration: underline
+	display: inline-block
+	&:hover
+		text-decoration: none
+	&:before
+		position: absolute
+		top: 6px
+		left: -20px
+		+s(av2)
+		content: ""
+.reference
+	position: relative
+	margin-top: 32px
+	font-size: 18px
+	font-weight: 100
+	color: #000  
+	&:before
+		position: absolute
+		top: 3px
+		left: -25px
+		+s(i_pic)
+		content: ""
+	&:after
+		position: absolute
+		top: 0
+		left: -17px
+		margin-top: 30px
+		width: 2px
+		height: 85%
+		background: url("../img/bor2.png")
 		content: ""
 .links-i, .information__links-i
 	color: #4b5053
@@ -119,6 +174,18 @@
 	margin-right: 302px
 .title-top__scrip
 	padding-right: 0
+.title-col2
+	font-size: 24px
+	color: #1D5B82 
+	font-weight: normal
+.title_info
+	color: #1D5B82
+	font-size: 18px
+	font-weight: 100  
+.info-org
+	margin: 0 0 19px 35px 
+	font-size: 24px
+	color: #595959 
 .goods, .price__goods
 	position: relative
 	margin-bottom: 1px
