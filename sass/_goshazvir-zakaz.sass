@@ -1,0 +1,316 @@
+.clearfix
+	+clr
+.pull-right
+	float: right
+.pull-left
+	float: left
+
+.out
+	position: relative
+///////////////////////////////// * * ////////////////////////////////
+
+// variables for color
+$bl: #1d5b82
+$gr: #4b5053
+
+// shared variables for all form elements
+$f-height: 30px
+$f-border: #bcbcbc
+$f-color: #595959
+
+// variables for checbox
+$ch-size: 18px
+
+=td
+	display: inline-block
+	line-height: 1
+	font-size: 18px
+	color: #0b95ec
+	text-decoration: none
+	border-bottom: 1px dashed #0b95ec
+	+c
+	&:hover
+		text-decoration: none
+		border-bottom: 1px dashed transparent
+
+.help-question
+	min-height: 34px
+	padding: 0 10px 0 7px 
+	position: fixed
+	top: 150px
+	left: -93px
+	z-index: 1666
+	text-align: right
+	font-size: 15px
+	+cl
+	+rotate(270)
+	+box
+	@include border-radius(0px 0px 10px 10px)
+	background-color: #03395d
+	@include box-shadow(1px 2px 0 rgba(0,0,0,.2))
+	@include background-image(linear-gradient(right, rgba(255,255,255,.15) 0%, rgba(0,0,0,.15) 100%))
+	span
+		vertical-align: middle
+		display: inline-block
+		+td
+		border-color: #fff
+		border-width: 2px
+		color: #FFF
+		&:hover
+			border-color: #fff
+			border-width: 2px
+	.icon-question-ico
+		margin-top: 3px
+		margin-right: 6px
+///////////////////////////////// * PAGE zakaz_1_1 * ////////////////////////////////
+.zakaz
+	.l-col1
+		margin-right: 0
+
+// sidebar
+.sidebar
+	position: relative
+	background: url("../img/icons/icon-conteiner_bg.png")
+	padding: 20px 10px
+	+box
+	&:after, &:before
+		content: ""
+		position: absolute
+		left: 0
+		height: 10px
+		width: 210px 
+	&:after
+		top: -10px 
+		background: url("../img/icons/icon-conteiner_bor.png")
+	&:before
+		bottom: -10px
+		background: url("../img/icons/icon-conteiner_bor-b.png")
+.sidebar__title
+	margin-bottom: 10px
+	line-height: 1
+	color: $bl
+	+fs(24)
+	+c 
+
+.download-excel_mod
+	margin-bottom: 20px
+	margin-left: 0
+	padding-left: 35px
+	&:before
+		left: 0
+
+// list
+.list
+	ul
+		
+	li
+		margin-bottom: 15px
+		padding: 0 12px
+		position: relative
+		+box
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: -2px
+			left: 0
+			+s(icon-list_arr)
+	a
+		text-decoration: underline
+		font-size: 16px 
+		color: $gr
+		+cl
+		&:hover
+			text-decoration: none
+	span
+		color: #0B95EC
+		font-size: 16px
+		+cl
+	.list__more
+		+td
+		font-size: 16px 
+	.list__summ
+		margin-top: 30px
+		color: $gr
+		font-size: 21px
+		+c
+		span
+			color: $gr
+			font-size: 16px
+			+cl
+
+// form
+.form
+
+.form__note
+	font-size: 18px
+	a
+		+td
+
+.form__title
+	margin-top: 25px
+	margin-bottom: 25px
+	position: relative
+	&:after
+		content: ""
+		height: 2px
+		width: 100%
+		position: absolute
+		bottom: -15px
+		left: 0
+		background: url("../img/bor1.png")
+	.h3
+		line-height: 1
+		color: $bl
+		font-size: 24px 
+		+c
+	.form__title-error
+		font-size: 16px
+		color: #e00000
+		+cl
+.form__in
+	width: 380px
+
+.row
+	margin-bottom: 15px
+	p
+		margin-bottom: 7px
+		line-height: 1
+		color: #595959
+		font-size: 18px
+		+c
+.recovery-pass
+	float: right
+	+td
+///////////////////////////////// * input * ////////////////////////////////
+[class^="input-"], [class*=" input-"]
+	width: 100%
+	outline: none
+	+transition(0.2s)
+	&:hover
+		+transition(0.2s)
+
+.input-default
+	height: $f-height
+	border: 1px solid $f-border
+	padding: 2px 10px
+	color: #000
+	+placeholder(#000)
+	font-size: 18px
+	+cl
+	+box
+	+radius(1px)
+	&:hover
+		border: 1px solid darken($f-border,10%)
+		@include box-shadow(inset 0 0px 1px darken($f-border,5%))
+	&:focus
+		+box-shadow( 0 0 0 2px #519ad4)
+
+.is-error
+	background: url("../img/icons/enter_bg-error2.png") 0 0 repeat
+	@include box-shadow(inset 0 1px 0px #a50c0c)
+	&:hover, &:focus
+		@include box-shadow(inset 0 1px 0px #a50c0c)
+	&:hover
+		@include box-shadow(inset 0 1px 1px #a50c0c)
+	&:focus
+		@include box-shadow(inset 0 2px 1px #a50c0c)
+	+placeholder-cont
+		color: #FFF
+		opacity: 1 
+
+///////////////////////////////// * checkbox * ////////////////////////////////
+.checkbox
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 16px
+	span
+		color: $f-color
+		display: inline-block
+		margin-left: 6px
+		+unselect
+	input
+		+opacity(0)
+	input + span
+		.checkbox__ico
+			content: ""
+			position: absolute
+			top: 2px
+			left: 0px
+			width: $ch-size
+			height: $ch-size
+			border: 1px solid #c8c8c8
+			+br(5)
+			+box
+	input:checked + span
+		.checkbox__ico
+			&:after
+				content: ""
+				position: absolute 
+				top: 50%
+				left: 50%
+				margin-left: -6px
+				margin-top: -6px 
+				+s(i-checked)
+				z-index: 666
+				+br(3px 3px 3px 4)
+	input:checked + span
+
+///////////////////////////////// * btn * ////////////////////////////////
+[class^="btn"], [class*=" btn"]
+	display: inline-block
+	vertical-align: middle
+	line-height: 1
+	cursor: pointer
+	outline: none
+	+unselect
+	+transition(0.2s)
+	text-decoration: none 
+	border: none
+	// +br(3) //
+	&:hover
+		+transition(0.2s)
+	&:active
+		+transform(scale(0.97))
+
+.btn_enter
+	height: 42px
+	line-height: 42px
+	display: block
+	text-align: center
+	position: relative
+	background: url("../img/icons/enter_bg2.png") 0 0 repeat
+	color: #fff
+	font-size: 22px
+	@include text-shadow(0 -2px 0 rgba(27,83,128,.75))
+	@include box-shadow (inset 0px 1px 0 rgba(127, 193,249, .75), inset 0px -1px 0 rgba(54, 134,202, .52))
+	+c
+	&:before, &:after
+		content: ""
+		width: 3px
+		height: 100%
+		position: absolute
+		top: 0
+	&:before
+		background: url("../img/icons/enter_left.png") 0 0 repeat-y
+		left: -3px
+	&:after
+		background: url("../img/icons/enter_right.png") 0 0 repeat-y 
+		right: -3px
+
+.btn_mod
+	&:after
+		background: url("../img/icons/enter_bg2.png") 0 0 repeat
+		height: 42px
+		width: 21px
+		right: -21px
+
+.captcha
+	width: 200px
+	height: 40px
+	margin-bottom: 8px
+
+
+
