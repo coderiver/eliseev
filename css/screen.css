@@ -104,6 +104,11 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 .icon-question-ico { background: url('../img/icons-s0384f28937.png') 0 -550px no-repeat; width: 22px; height: 21px; }
 
+.i-arr_transparent { width: 0px; height: 0px; border-style: solid; border-width: 21.5px 0 21.5px 21px; border-color: transparent transparent transparent transparent; position: absolute; z-index: 666; right: -21px; top: 0; }
+.i-arr_transparent:after, .i-arr_transparent:before { content: ""; position: absolute; z-index: 666; right: 0px; }
+.i-arr_transparent:after { width: 0px; height: 0px; border-style: solid; border-width: 0 21px 21px 0; border-color: transparent white transparent transparent; top: -21px; }
+.i-arr_transparent:before { width: 0px; height: 0px; border-style: solid; border-width: 0 0 21px 21px; border-color: transparent transparent white transparent; bottom: -21px; }
+
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; font-size: 14px; }
@@ -321,6 +326,6 @@ body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; fo
 .btn_enter:before { background: url("../img/icons/enter_left.png") 0 0 repeat-y; left: -3px; }
 .btn_enter:after { background: url("../img/icons/enter_right.png") 0 0 repeat-y; right: -3px; }
 
-.btn_mod:after { background: url("../img/icons/input-arr.png") 0 0 no-repeat; height: 42px; width: 21px; right: -21px; }
+.btn_mod:after { background: url("../img/icons/enter_bg2.png") 0 0 repeat; height: 42px; width: 21px; right: -21px; }
 
 .captcha { width: 200px; height: 40px; margin-bottom: 8px; }
