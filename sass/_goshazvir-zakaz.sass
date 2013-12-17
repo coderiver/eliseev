@@ -309,5 +309,129 @@ $ch-size: 18px
 	height: 40px
 	margin-bottom: 8px
 
+///////////////////////////////// * PAGE popup.html* ////////////////////////////////
+.popup
+	width: 492px
+	min-height: 400px
+	background: #fff
+	@include box-shadow(0 4px 16px 2px rgba(2,28,52,.35))
+	position: absolute
+	z-index: 666
+	top: 220px
+	left: 50%
+	margin-left: -246px
+	&:after, &:before
+		content: ""
+		width: 100%
+		height: 13px
+		position: absolute
+		left: 0
+	&:after
+		top: -13px
+		background: url("../img/icons/popup-wave.png") -12px 0 repeat
+	&:before
+		bottom: -13px
+		background: url("../img/icons/popup-wave2.png") -12px 0 repeat 
+	.popup-i
+		position: relative
+		padding: 30px 0
+		text-align: center
+		+box
+	.icon-cross
+		position: absolute
+		top: 17px
+		right: 30px
+
+.popup__label
+	width: 290px
+	margin: 25px 0 25px
+	display: inline-block
+	text-align: left
+.popup__title
+	margin-bottom: 20px
+	line-height: 1
+	color: $bl
+	font-size: 24px
+	+c  
+.popup__item
+	margin-bottom: 10px
+	+clr
+	.ava
+		float: left
+	.popup__item-contacts
+		width: 90px
+		float: left
+		margin-left: 20px
+	.popup__item-fio
+		margin-bottom: 15px
+		line-height: 1
+		color: #000
+		font-size: 20px
+		+cl
+		a
+			text-decoration: none
+			color: #000
+			font-size: 20px
+			+cl
+			&:hover
+				text-decoration: underline
+
+.ava
+	width: 107px
+	height: 107px
+	overflow: hidden
+	padding: 4px
+	background: #f8f7f7
+	@include box-shadow(1px 2px 2px rgba(1,1,1,.23))
+	img
+		min-width: 100% 
+
+.skype
+	font-size: 16px
+	color: #000 
+	vertical-align: bottom
+	display: inline-block
+	+cl
+	&:hover
+		text-decoration: none
+	[class^="icon-"], [class*=" icon-"] 
+		margin-right: 15px
+.mail
+	font-size: 16px
+	color: #000
+	vertical-align: bottom
+	display: inline-block
+	+cl
+	&:hover
+		text-decoration: none
+	[class^="icon-"], [class*=" icon-"]
+		margin-right: 11px
+
+.schedule
+	width: 330px
+	margin-left: 83px
+	text-align: left
+	+clr
+	.schedule__tel
+		margin-bottom: 15px
+		line-height: 1
+		color: #000
+		font-size: 18px
+		+cl 
+	strong
+		font-size: 15px
+		color: #000
+		+c
+		font-weight: bold
+	.schedule__left
+		width: 135px
+		float: left
+	.schedule__right
+		width: 195px
+		float: left
+		li
+			font-size: 15px
+			+cl
 
 
+		
