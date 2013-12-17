@@ -206,12 +206,15 @@ $ch-size: 18px
 		border: 1px solid darken($f-border,15%)
 		@include box-shadow(inset 0 1px 2px darken($f-border,5%))
 
-.input_error
+.is-error
 	background: url("../img/icons/enter_bg-error2.png") 0 0 repeat
 	@include box-shadow(inset 0 1px 0px #a50c0c)
 	&:hover, &:focus
 		@include box-shadow(inset 0 1px 0px #a50c0c)
-	
+	&:hover
+		@include box-shadow(inset 0 1px 1px #a50c0c)
+	&:focus
+		@include box-shadow(inset 0 2px 1px #a50c0c)
 
 ///////////////////////////////// * checkbox * ////////////////////////////////
 .checkbox
