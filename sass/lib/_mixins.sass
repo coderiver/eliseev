@@ -178,3 +178,20 @@ $svg: "svg/"
 	-webkit-border-radius: $val + px
 	border-radius: $val + px
 
+
+=placeholder-cont 
+	&:-ms-input-placeholder 
+		@content
+	
+	&:-moz-placeholder 
+		@content
+	
+	&::-moz-placeholder 
+		@content
+	
+	&::-webkit-input-placeholder 
+		@content
+	
+	&::placeholder 
+		@content
+
