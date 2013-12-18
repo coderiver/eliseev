@@ -66,113 +66,97 @@
 				
 			<!-- BEGIN .l-col2 -->
 			<div class="l-col2">
-				<div class="price">
-					<div class="title-top ">
-						<h2 class="tops title-top__name">Название:</h2>
-						<h2 class="tops title-top__quantity">Количество:</h2>
-						<h2 class="tops title-top__price">Цена (руб.):</h2>
-						<h2 class="tops title-top__scrip">Сумма (руб.):</h2>
-					</div>
-					<div class="area price__goods">
-						<div class="image-goods">
-							<img src="img/pic1.png">
-						</div>
-						<div class="description">
-							<a class="name-product" href="">Урна-пепельница</a><br>
-							<span class="description__quality description__quality_range">Бренд:</span>
-							<span class="description__quality">Jofel</span><br>
-							<span class="description__quality description__quality_range">Серия:</span>
-							<span class="description__quality">asd 14412</span><br>
-							<span class="description__quality description__quality_range">Артикул:</span>
-							<span class="description__quality">23606</span>
-						</div>
-						<div class="amount">
-							<span class="amount__numeric">
-								1 шт
-							</span>
-							<span class="amount__numeric">
-								3500
-							</span>
-							<strong class="amount__numeric amount__numeric_rig">
-								3500
-							</strong>
-						</div>
-					</div>
-					<div class="area price__goods">
-						<div class="image-goods">
-							<img src="img/pic2.png">
-						</div>
-						<div class="description">
-							<a class="name-product" href="">Урна с кришкой в названием в две строки</a><br>
-							<span class="description__quality description__quality_range">Бренд:</span>
-							<span class="description__quality">Jofel</span><br>
-							<span class="description__quality description__quality_range">Серия:</span>
-							<span class="description__quality">asd 14412</span><br>
-							<span class="description__quality description__quality_range">Артикул:</span>
-							<span class="description__quality">23606</span>
-						</div>
-						<div class="amount">
-							<span class="amount__numeric">
-								6 шт
-							</span>
-							<span class="amount__numeric">
-								12000
-							</span>
-							<strong class="amount__numeric amount__numeric_rig">
-								12000
-							</strong>
-						</div>
-					</div>
-					<div class="area price__goods">
-						<div class="image-goods">
-							<img src="img/pic1.png">
-						</div>
-						<div class="description">
-							<a class="name-product" href="">Урна-пепельница</a><br>
-							<span class="description__quality description__quality_range">Бренд:</span>
-							<span class="description__quality">Jofel</span><br>
-							<span class="description__quality description__quality_range">Серия:</span>
-							<span class="description__quality">asd 14412</span><br>
-							<span class="description__quality description__quality_range">Артикул:</span>
-							<span class="description__quality">23606</span>
-						</div>
-						<div class="amount">
-							<span class="amount__numeric">
-								4 шт
-							</span>
-							<span class="amount__numeric">
-								14000
-							</span>
-							<strong class="amount__numeric amount__numeric_rig">
-								14000
-							</strong>
-						</div>
-					</div>
-					<div class="area price__goods price__goods_bott">
-						<div class="image-goods">
-							<img src="img/pic2.png">
-						</div>
-						<div class="description">
-							<a class="name-product" href="">Урна с кришкой в названием в две строки</a><br>
-							<span class="description__quality description__quality_range">Бренд:</span>
-							<span class="description__quality">Jofel</span><br>
-							<span class="description__quality description__quality_range">Серия:</span>
-							<span class="description__quality">asd 14412</span><br>
-							<span class="description__quality description__quality_range">Артикул:</span>
-							<span class="description__quality">23606</span>
-						</div>
-						<div class="amount">
-							<span class="amount__numeric">
-								6 шт
-							</span>
-							<span class="amount__numeric">
-								12000
-							</span>
-							<strong class="amount__numeric amount__numeric_rig">
-								12000
-							</strong>
-						</div>
-					</div>
+				<table class="table">
+					<tr>
+						<th class="tops tops_left" colspan="2">Название:</th>
+						<th class="tops tops_right">Количество:</th>
+						<th class="tops tops_right">Цена (руб.):</th>
+						<th class="tops tops_right">Сумма (руб.):</th>
+					</tr>
+				</table>
+				<div class="table-block">
+					<table class="table">
+						<tr>
+							<td class="td_width">
+								<img class="goods-image" src="img/pic1.png">
+							</td>
+							<td>
+								<a class="name-product" href="">Урна с крышкой</a><br>
+								<span class="description-goods description-goods_range">Бренд:</span>
+								<span class="description-goods">Jofel</span><br>
+								<span class="description-goods description-goods_range">Серия:</span>
+								<span class="description-goods">asd 14412</span><br>
+								<span class="description-goods description-goods_range">Артикул:</span>
+								<span class="description-goods">23606</span>
+							</td>
+							<td class="amount-numeric ">1 шт</td>
+							<td class="amount-numeric ">3500</td>
+							<td class="amount-numeric amount-numeric_rig ">3500</td>
+						</tr>
+					</table>
+				</div>
+				<div class="table-block">
+					<table class="table">
+						<tr>
+							<td class="td_width">
+								<img class="goods-image" src="img/pic2.png">
+							</td>
+							<td>
+								<a class="name-product" href="">Урна с крышкой с названием в две строки</a><br>
+								<span class="description-goods description-goods_range">Бренд:</span>
+								<span class="description-goods">Jofel</span><br>
+								<span class="description-goods description-goods_range">Серия:</span>
+								<span class="description-goods">asd 14412</span><br>
+								<span class="description-goods description-goods_range">Артикул:</span>
+								<span class="description-goods">23606</span>
+							</td>
+							<td class="amount-numeric ">6 шт</td>
+							<td class="amount-numeric ">2000</td>
+							<td class="amount-numeric amount-numeric_rig ">12000</td>
+						</tr>
+					</table>
+				</div>
+				<div class="table-block">
+					<table class="table">
+						<tr>
+							<td class="td_width">
+								<img class="goods-image" src="img/pic1.png">
+							</td>
+							<td>
+								<a class="name-product" href="">Урна с крышкой</a><br>
+								<span class="description-goods description-goods_range">Бренд:</span>
+								<span class="description-goods">Jofel</span><br>
+								<span class="description-goods description-goods_range">Серия:</span>
+								<span class="description-goods">asd 14412</span><br>
+								<span class="description-goods description-goods_range">Артикул:</span>
+								<span class="description-goods">23606</span>
+							</td>
+							<td class="amount-numeric ">4 шт</td>
+							<td class="amount-numeric ">3500</td>
+							<td class="amount-numeric amount-numeric_rig ">14000</td>
+						</tr>
+					</table>
+				</div>
+				<div class="table-block table-block_bottom-border">
+					<table class="table">
+						<tr>
+							<td class="td_width">
+								<img class="goods-image" src="img/pic2.png">
+							</td>
+							<td>
+								<a class="name-product" href="">Урна с крышкой с названием в две строки</a><br>
+								<span class="description-goods description-goods_range">Бренд:</span>
+								<span class="description-goods">Jofel</span><br>
+								<span class="description-goods description-goods_range">Серия:</span>
+								<span class="description-goods">asd 14412</span><br>
+								<span class="description-goods description-goods_range">Артикул:</span>
+								<span class="description-goods">23606</span>
+							</td>
+							<td class="amount-numeric ">6 шт</td>
+							<td class="amount-numeric ">2000</td>
+							<td class="amount-numeric amount-numeric_rig ">12000</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<!-- END .l-col2 -->

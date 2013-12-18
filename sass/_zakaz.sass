@@ -24,7 +24,7 @@
 	+clr
 .l-col1
 	float: left
-	width: 210px
+	width: 220px
 .l-col2
 	width: 700px
 	float: right
@@ -35,7 +35,7 @@
 	color: #4b5053 
 	a
 		position: relative
-		margin-right: 20px
+		margin-right: 18px
 		color: #1d5b82
 		+cl
 		&:hover
@@ -43,7 +43,7 @@
 		&:before
 			position: absolute
 			top: 50%
-			right: -17px
+			right: -16px
 			margin-top: -3px
 			content: ""
 			+s(breadpref)
@@ -52,8 +52,8 @@
 		font-size: 16px
 .information
 	position: relative
-	margin: 12px 0 12px
-	padding: 10px 0 10px 29px 
+	margin: 10px 0 12px
+	padding: 10px 0 10px 30px 
 	font-size: 20px
 	background: url("../img/bac1.png") repeat
 	&:before
@@ -61,7 +61,7 @@
 		left: 0
 		bottom: 0
 		height: 5px
-		width: 210px
+		width: 100%
 		background: url("../img/bacbattom.png")
 		content: ""
 	&:after
@@ -69,13 +69,13 @@
 		left: 0
 		top: 0
 		height: 5px
-		width: 210px
+		width: 100%
 		background: url("../img/bacbattom.png")
 		transform: rotate(180deg)
 		content: ""
 .authorization
 	position: relative
-	margin: 9px 0 20px 20px
+	margin: 9px 0 20px 30px
 .authorization__col
 	font-size: 16px
 	color: #F00 
@@ -88,7 +88,7 @@
 	&:before
 		position: absolute
 		top: 6px
-		left: -20px
+		left: -30px
 		+s(av1)
 		content: ""
 .authorization__col_change-passw
@@ -101,7 +101,7 @@
 	&:before
 		position: absolute
 		top: 6px
-		left: -20px
+		left: -30px
 		+s(av2)
 		content: ""
 .reference
@@ -113,13 +113,13 @@
 	&:before
 		position: absolute
 		top: 3px
-		left: -25px
+		left: -33px
 		+s(i_pic)
 		content: ""
 	&:after
 		position: absolute
 		top: 0
-		left: -17px
+		left: -25px
 		margin-top: 30px
 		width: 2px
 		height: 85%
@@ -127,14 +127,13 @@
 		content: ""
 .links-i, .information__links-i
 	color: #4b5053
-	font-weight: 100
+	+cl
 	&:hover
 		text-decoration: none
 .order, .information__order-number
 	position: relative
 	margin-top: 10px 
 	color: #3DB1FA
-	font-weight: normal
 	cursor: pointer 
 	display: inline-block
 	&:before
@@ -151,31 +150,32 @@
 .download-excel
 	position: relative
 	margin-left: 60px 
-	display: inline-block
 	font-size: 12px
+	line-height: 1.7
 	color: #4b5053
+	display: inline-block
+	+cl
 	&:hover
 		text-decoration: none
 	&:before
 		position: absolute
 		top: 0
-		left: -33px
+		left: -30px
 		content: ""
 		+s(xls)
-
-.title-top
-	margin-bottom: 20px 
+.table
+	width: 700px 
 .tops 
-	padding-right: 9px
+	padding-bottom: 18px 
 	color: #4b5053 
 	font-size: 18px
-	font-weight: 100
-	display: inline-block
-.title-top__name
-	margin-right: 296px
-.title-top__scrip
-	padding-right: 0
-	float: right
+	line-height: 1
+	+cl
+.tops_right
+	text-align: right
+.tops_left
+	text-align: left
+	width: 325px
 .title-col2
 	font-size: 24px
 	color: #1D5B82 
@@ -201,53 +201,66 @@
 		width: 100%
 		content: ""
 		background: url("../img/bor1.png")
-	&.price__goods_bott
-		position: relative
-		&:after
-			position: absolute
-			bottom: 0
-			left: 0
-			height: 2px
-			width: 100%
-			content: ""
-			background: url("../img/bor1.png")
-.image-goods
-	float: left
-	margin: 15px 15px 15px 0
+.table-block
+	position: relative
+	padding: 15px 0 8px
+	min-height: 92px
+	width: 700px
+	&:before
+		content: ""
+		width: 100%
+		height: 2px
+		position: absolute
+		top: 0px
+		left: 0
+		background: url("../img/bor1.png")
+	&:after
+		position: absolute
+		bottom: -2px
+		left: 0
+		height: 2px
+		width: 100%
+		content: ""
+		background: url("../img/bor1.png")
+.goods-image
 	border-top: 1px solid #b9e1fb
-	border-bottom: 1px solid #bababa  
-.description
-	float: left
-	margin-top: 12px
-	width: 190px
+	border-bottom: 1px solid #bababa
+	position: absolute
+	top: 15px
+	left: 0 
+.td_width
+	width: 88px
 .name-product
+	padding-left: 15px
+	width: 225px
 	color: #1d5b82
 	font-size: 18px
-	line-height: 1.0 
+	vertical-align: 4px
+	display: inline-block
+	line-height: 1.1
 	&:hover
 		text-decoration: none
-.description__quality
+.description-goods
+	padding-left: 15px
 	font-size: 15px 
 	line-height: 1.6
 	color: #000 
 	+cl
-.description__quality_range
+.description-goods_range
 	display: inline-block
 	width: 60px
-.amount
-	float: right
-	margin-top: 34px
-.amount__numeric
-	width: 100px
+.amount-numeric
+	width: 112px
 	text-align: center
 	font-size: 15px 
+	line-height: 5.0
+	vertical-align: top 
 	color: #4B5053 
-	display: inline-block
 	+cl
-.amount__numeric_rig
+.amount-numeric_rig
 	text-align: right
 	font-size: 24px
-	font-weight: normal
+	line-height: 2.8
 .field
 	margin-bottom: 20px
 	width: 380px
@@ -290,4 +303,4 @@
 	font-size: 22px
 	line-height: 43px 
 	color: #fff
-	text-decoration: none 
+	text-decoration: none
