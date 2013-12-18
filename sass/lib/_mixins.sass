@@ -40,6 +40,24 @@
 	&::-webkit-input-placeholder
 		color: $color
 
+=placeholder-cont 
+	&:-ms-input-placeholder 
+		@content
+	
+	&:-moz-placeholder 
+		@content
+	
+	&::-moz-placeholder 
+		@content
+	
+	&::-webkit-input-placeholder 
+		@content
+	
+	&::placeholder 
+		@content
+	
+
+
 =rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
 	-moz-transform: 	rotate($deg + deg)
 	-o-transform: 		rotate($deg + deg)

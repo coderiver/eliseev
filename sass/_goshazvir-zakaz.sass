@@ -199,12 +199,26 @@ $ch-size: 18px
 	font-size: 18px
 	+cl
 	+box
+	+placeholder-cont
+		color: #FFF
+		opacity: 1 
+// <<<<<<< HEAD
+// 	&:hover
+// 		border: 1px solid darken($f-border,10%)
+// 		@include box-shadow(inset 0 0px 1px darken($f-border,5%))
+// 	&:focus
+// 		border: 1px solid darken($f-border,15%)
+// 		@include box-shadow(inset 0 1px 2px darken($f-border,5%))
+// =======
+// 	+radius(1px)
 	&:hover
 		border: 1px solid darken($f-border,10%)
-		@include box-shadow(inset 0 0px 1px darken($f-border,5%))
+		//@include box-shadow(inset 0 0px 1px darken($f-border,5%))
 	&:focus
-		border: 1px solid darken($f-border,15%)
-		@include box-shadow(inset 0 1px 2px darken($f-border,5%))
+		+box-shadow( 0 0 0 2px #519ad4)
+		border: 1px solid transparent
+		+transition(0)
+// />>>>>>> 25801713de230f34256777cff43fa0ac208af443
 
 .is-error
 	background: url("../img/icons/enter_bg-error2.png") 0 0 repeat
@@ -215,6 +229,10 @@ $ch-size: 18px
 		@include box-shadow(inset 0 1px 1px #a50c0c)
 	&:focus
 		@include box-shadow(inset 0 2px 1px #a50c0c)
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 25801713de230f34256777cff43fa0ac208af443
 
 ///////////////////////////////// * checkbox * ////////////////////////////////
 .checkbox
