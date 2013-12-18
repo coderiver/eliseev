@@ -44,7 +44,7 @@
 	.logo
 		float: left
 		margin-top: 18px
-		margin-right: 70px
+		margin-right: 45px
 		+s(logo-sm)
 		a
 			display: block
@@ -56,14 +56,40 @@
 		margin-top: 65px
 		& > ul
 			+clr
-			li
+			& > li
+				height: 35px
+				line-height: 35px
 				float: left
-				margin-left: 60px
+				margin-left: 40px
 				font-size: 18px
 				color: #0c3f5f
-				line-height: 1
+				position: relative
 				&:first-child
 					margin-left: 0
+				&.is-dropnav
+					padding: 0 15px
+					background: transparent 
+					@include border-radius(10px 0px 0px 0px)
+					position: relative
+					+box
+					&:hover
+						background: #fff
+						@include box-shadow(0 0px 4px rgba(0, 0, 0, 0.26))
+						&:after
+							content: ""
+							+s(nav-border)
+							position: absolute
+							right: -5px
+							bottom: 0
+						ul
+							display: block
+				&.is-dropnav_mini
+					ul
+						width: 175px
+				&.is-basket
+					float: right
+					.basket
+						padding-right: 0
 				span
 					position: relative
 					display: inline-block
@@ -76,7 +102,7 @@
 					&:hover
 						cursor: pointer
 						b
-							border-color: transparent
+							// border-color: transparent
 					&:after
 						position: absolute
 						right: 0
@@ -88,7 +114,7 @@
 						border-style: solid
 						border-width: 4px 4px 0 4px
 						border-color: #0c3f5f transparent transparent transparent
-				a
+				& > a
 					display: inline-block
 					line-height: 1
 					color: #0c3f5f
@@ -97,6 +123,35 @@
 					&:hover
 						text-decoration: none
 						border-color: transparent
+				ul
+					display: none
+					width: 270px
+					z-index: 999
+					background: #fff 
+					position: absolute
+					top: 35px
+					left: 0
+					@include border-radius(0px 0px 10px 10px)
+					@include box-shadow(0 4px 4px rgba(0,0,0,.26))
+					overflow: hidden
+					+clr
+					li
+						width: 100%
+						float: left
+						&:first-child
+							a
+								margin-top: 0
+					a
+						padding: 7px 15px
+						display: block
+						margin-top: 10px
+						line-height: 1.2
+						color: #272727
+						font-size: 18px
+						+cl
+						&:hover
+							background: url("../img/icons/subnav2.png") -12px 0 repeat
+							text-decoration: none
 
 .footer
 	padding: 35px 0
