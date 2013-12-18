@@ -178,7 +178,7 @@ body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; fo
 .menu ul:before, .menu ul:after { content: ""; display: table; }
 .menu ul:after { clear: both; }
 .menu li { width: 240px; float: left; line-height: 1; padding-left: 10px; margin-bottom: 20px; }
-.menu a { line-height: 1.2; font-size: 16px; color: white; text-decoration: underline; font-family: "Calibri Light", sans-serif; font-weight: normal; }
+.menu a { line-height: 1.2; font-size: 16px; color: white; text-decoration: underline; font-family: "Calibri Light", sans-serif; font-weight: normal; font-weight: 100; }
 .menu a:hover { text-decoration: none; }
 
 .menu_mod { width: 300px; margin-left: 40px; }
@@ -359,14 +359,14 @@ body { font-family: Arial, sans-serif; font-weight: normal; line-height: 1.4; fo
 .popup__item:after { clear: both; }
 .popup__item .ava { float: left; }
 .popup__item .popup__item-contacts { width: 90px; float: left; margin-left: 20px; }
-.popup__item .popup__item-fio { margin-bottom: 15px; line-height: 1; color: black; font-size: 20px; font-family: "Calibri Light", sans-serif; font-weight: normal; }
+.popup__item .popup__item-fio { margin-bottom: 20px; line-height: 1; color: black; font-size: 20px; font-family: "Calibri Light", sans-serif; font-weight: normal; }
 .popup__item .popup__item-fio a { text-decoration: none; color: black; font-size: 20px; font-family: "Calibri Light", sans-serif; font-weight: normal; }
 .popup__item .popup__item-fio a:hover { text-decoration: underline; }
 
 .ava { width: 107px; height: 107px; overflow: hidden; padding: 4px; background: #f8f7f7; -webkit-box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.23); -moz-box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.23); box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.23); }
 .ava img { min-width: 100%; }
 
-.skype { font-size: 16px; color: black; vertical-align: bottom; display: inline-block; font-family: "Calibri Light", sans-serif; font-weight: normal; }
+.skype { margin-bottom: 5px; font-size: 16px; color: black; vertical-align: bottom; display: inline-block; font-family: "Calibri Light", sans-serif; font-weight: normal; }
 .skype:hover { text-decoration: none; }
 .skype [class^="icon-"], .skype [class*=" icon-"] { margin-right: 15px; }
 
